@@ -1,0 +1,43 @@
+.short-underline {
+    position: relative;
+
+    &::after {
+        content:' ';
+        position: absolute;
+        top:100%;
+        left:50%;
+        width: 73px;
+        border:3px solid $primary-color;
+        border-radius:4px;
+        box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+        transform:translateX(-100%);
+    }
+}
+
+.devugo-section {
+    margin: 40px 0;
+    padding: 20px 0;
+}
+
+input, textarea {
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 20px;
+    height: 50px;
+
+    &:hover, 
+    &:active,
+    &:focus
+    {
+        outline:0px !important;
+        -webkit-appearance:none;
+        box-shadow: none !important;
+        border: 1.5px solid $secondary-color;
+    }
+}
+
+.devugo-card {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 15px;
+}

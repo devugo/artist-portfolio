@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.short-underline {
+  position: relative;
+}
+
+.short-underline::after {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 73px;
+  border: 3px solid #CBFDC3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.devugo-section {
+  margin: 40px 0;
+  padding: 20px 0;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid grey;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+input:hover, input:active, input:focus, textarea:hover, textarea:active, textarea:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 1.5px solid #EBF8FF;
+}
+
+.devugo-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 15px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,61 @@
+// Author: Ezenwankwo Ugochukwu
+// Email: info@devugo.com
+// Website: profile.devugo.com
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin transition-move {
+    transition: all 0.5s move;
+}
+
+@function set-text-color($color) {
+    @if(lightness($color) > 40%){
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
+@mixin box-shadow {
+    box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+}
+
+@mixin media-sm {
+    @media screen and (min-width: 500px){
+        @content;
+    }
+}
+@mixin media-md {
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+@mixin media-md-bootstrap {
+    @media screen and (min-width: 992px){
+        @content;
+    }
+}
+@mixin media-lg {
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+@mixin media-xl {
+    @media screen and (min-width: 1600px){
+        @content;
+    }
+}
