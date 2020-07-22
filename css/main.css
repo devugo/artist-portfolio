@@ -412,4 +412,39 @@ section {
     padding: 100px 10% 10% 10%;
   }
 }
+
+.portfolio {
+  margin-top: 70px;
+}
+
+.portfolio .container .body .section-title {
+  margin-bottom: 30px;
+}
+
+.portfolio .container .body .section-title h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+}
+
+.portfolio .container .body .content img {
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.portfolio .container .body .content img:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio .container .body .section-title h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

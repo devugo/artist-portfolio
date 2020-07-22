@@ -1,0 +1,44 @@
+.portfolio {
+    margin-top: 70px;
+    .container {
+        .body {
+            .section-title {
+                margin-bottom: 30px;
+                h2 {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: white;
+                }
+            }
+            .content {
+                img {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                    @include transition-ease;
+
+                    &:hover {
+                        filter: brightness(90%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-md {
+    .portfolio {
+        .container {
+            .body {
+                .section-title {
+                    h2 {
+                        font-size: 36px;
+                        line-height: 48px;
+                    }
+                }
+            }
+        }
+    }
+}
