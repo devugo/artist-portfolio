@@ -1,0 +1,66 @@
+.devugo-footer {
+    width: 100%;
+    background-color: red;
+    .body {
+        .content {
+            // color: white;
+            // padding: 5% 15% 5% 15%;
+
+            &.first {
+                .brief {
+                    // display: none;
+                }
+
+                p{
+                    // font-weight: 300;
+                    // font-size: 14px;
+                    // line-height: 21px;
+                    // margin-bottom: 30px;
+                }
+
+                form {
+                    input {
+                        // border: none;
+                        // border-bottom: 1px solid white;
+                        // background: inherit;
+                        // color: #f3f3f3;
+                        // font-weight: 300;
+                        // font-size: 16px;
+                    }
+                }
+                
+                .footer-logo {
+                    // width: 40px;
+                    // margin-bottom: 20px;
+                }
+            }
+            &.second {
+                // background-color: $primary-color;
+                // color: $text-color;
+
+                .footer-logo {
+                    // width: 60px;
+                    // margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-md {
+    .footer {
+        .body {
+            .content {
+                &.first {
+                    .main {
+                        // display: none;
+                    }
+                    .brief {
+                        // display: block;
+                    }
+                }
+            }
+        }
+    }
+}

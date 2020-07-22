@@ -145,6 +145,11 @@ section {
   color: white;
 }
 
+.devugo-footer {
+  width: 100%;
+  background-color: red;
+}
+
 .banner {
   display: relative;
 }
@@ -445,6 +450,173 @@ section {
   .portfolio .container .body .section-title h2 {
     font-size: 36px;
     line-height: 48px;
+  }
+}
+
+.reviews .body {
+  position: relative;
+}
+
+.reviews .body .content h3 {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 13px;
+  margin-top: 5px;
+}
+
+.reviews .body .content p {
+  font-weight: 300;
+  font-size: 8px;
+  line-height: 12px;
+  margin-left: 10px;
+}
+
+.reviews .body .content p.quote {
+  float: right;
+}
+
+.reviews .body .content .line-one {
+  width: 23.38px;
+  background-color: black;
+  height: 1px;
+  position: absolute;
+  left: 25%;
+  margin-bottom: 10px;
+}
+
+.reviews .body .content .line-two {
+  width: 23.38px;
+  background-color: black;
+  height: 1px;
+  position: absolute;
+  left: 25%;
+  margin-bottom: 10px;
+}
+
+.reviews .body .content .first {
+  position: relative;
+  background-color: #CBFDC3;
+  width: 65%;
+  padding: 7% 15% 5% 15%;
+}
+
+.reviews .body .content .second {
+  position: absolute;
+  right: -80px;
+  top: 23%;
+}
+
+.reviews .body .content .second img {
+  width: 112.99px;
+}
+
+.reviews .body .content h2 {
+  position: absolute;
+  top: 30px;
+  left: -10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(70, 45, 45, 0.34);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.reviews .body .next-button {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #CBFDC3;
+  top: 60px;
+  right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.reviews .body .next-button i {
+  color: #2C2E31;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews .body .content h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .reviews .body .content p {
+    margin-left: 25px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .reviews .body .content p.quote {
+    margin-top: -15px;
+  }
+  .reviews .body .content .line-one {
+    width: 70px;
+    left: 33%;
+  }
+  .reviews .body .content .line-two {
+    width: 70px;
+    left: 33%;
+  }
+  .reviews .body .content .first {
+    padding: 7% 18% 5% 18%;
+  }
+  .reviews .body .content .second {
+    right: -150px;
+  }
+  .reviews .body .content .second img {
+    width: 200px;
+  }
+  .reviews .body .content h2 {
+    font-size: 27px;
+    line-height: 48px;
+    top: 40px;
+  }
+  .reviews .body .next-button {
+    width: 60px;
+    height: 60px;
+    top: 160px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .reviews .body .content h3 {
+    font-size: 18px;
+  }
+  .reviews .body .content p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .reviews .body .content .first {
+    width: 55%;
+    padding: 7% 14% 5% 14%;
+  }
+  .reviews .body .content .second {
+    right: -250px;
+  }
+  .reviews .body .content .second img {
+    height: 427px;
+    width: 310px;
+  }
+  .reviews .body .content h2 {
+    font-size: 32px;
+    top: 50px;
+  }
+  .reviews .body .next-button {
+    top: 300px;
+    right: 200px;
   }
 }
 /*# sourceMappingURL=main.css.map */
