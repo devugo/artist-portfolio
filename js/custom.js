@@ -22,3 +22,11 @@ $(document).ready(function(){
         }
     })
 });
+
+var navbarCloseBtn = document.getElementById('navbar-close');
+var navbar = document.getElementById('navbar');
+
+
+navbarCloseBtn.addEventListener('click', function(){
+    navbar.classList.toggle("open");
+})

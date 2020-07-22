@@ -38,26 +38,25 @@
 
 </head>
 <body>
-    <nav id="devugo-navbar" class="navbar navbar-expand-lg navbar-light show-shadow">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" /></a>
-            <button style="border: 0px !important;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <!-- <span class="hamburger"></span> -->
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Potrtfolio</a>
-                    </li>
+    <nav id="devugo-navbar">
+        <div class="content">
+            <a class="navbar-logo" href="#"><img src="img/logo-dark.png" /></a>
+
+            <div class="navbar" id="navbar">
+                <div class="circle" id="navbar-close">
+                    x
+                </div>
+                <ul class="navbar-menu">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                 </ul>
+                <a href="#contact" class="btn devugo-btn">Contact Me</a>
+            </div>
+
+            <div class="hamburger">
+                <span class="hamburger-stick"></span>
+                <span class="hamburger-stick"></span>
             </div>
         </div>
     </nav>
@@ -86,15 +85,15 @@
             </div>
             <img class="left-circles" src="img/side-circles.png" />
         </div>
-        <h2 class="art-text">ART</h2>
+        <h2 class="title art-text">ART</h2>
     </section>
 
-    <!-- <section class="about" id="about">
+    <section class="about" id="about">
         <div class="body">
             <img src="img/image3.png" />
-            <div class="content">
-                <div class="title">
-                    <h3>I’m <br /> Steve OX</h3>
+            <div class="main-content">
+                <div class="title-content">
+                    <h3 class="title">I’m <br /> Steve OX</h3>
                 </div>
                 <div class="content">
                     <p>
@@ -116,11 +115,12 @@
                         eleifend at. Ridiculus ornare viverra nunc, lectus risus, ultricies tortor
                     </p>
                 </div>
+                <h3 class="title-side">ABOUT</h3>
             </div>
         </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
+    <!-- <section class="portfolio" id="portfolio">
         <div class="body">
             <div class="section-titlt">
                 <h2>Portfolio</h2>
