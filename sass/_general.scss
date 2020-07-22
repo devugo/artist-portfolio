@@ -14,11 +14,6 @@
     }
 }
 
-.devugo-section {
-    margin: 40px 0;
-    padding: 20px 0;
-}
-
 input, textarea {
     width: 100%;
     border: 1px solid grey;
@@ -40,4 +35,14 @@ input, textarea {
     background: #FFFFFF;
     border-radius: 8px;
     padding: 15px;
+}
+
+section {
+    color: $text-color;
+}
+
+@media(max-width: 767px) {
+    .hide-mobile {
+        display: none;
+    }
 }

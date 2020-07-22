@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet');
+body {
+  background-color: #131417;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -9,6 +14,10 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
 }
 
 .short-underline {
@@ -27,11 +36,6 @@ html {
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-}
-
-.devugo-section {
-  margin: 40px 0;
-  padding: 20px 0;
 }
 
 input, textarea {
@@ -55,7 +59,157 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   padding: 15px;
 }
 
+section {
+  color: #2C2E31;
+}
+
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+.banner {
+  display: relative;
+}
+
+.banner .body {
+  margin: 0px 40px;
+}
+
+.banner .body .content .banner-card {
+  padding: 70px 60px 60px 60px;
+  background-color: #CBFDC3;
+  height: 262px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.banner .body .content .banner-card h4 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+.banner .body .content .banner-card p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.banner .body .content .banner-card .orange-pill {
+  background: #FF5858;
+  border-radius: 44px;
+  width: 47px;
+  height: 4px;
+  position: absolute;
+  top: 15px;
+  right: 25%;
+}
+
+.banner .body .content .banner-card .blue-pill {
+  width: 22px;
+  height: 4px;
+  background: rgba(37, 43, 197, 0.76);
+  border-radius: 44px;
+  position: absolute;
+  top: 15px;
+  right: 12%;
+}
+
+.banner .body .content.first-content {
+  position: relative;
+}
+
+.banner .body .content.first-content .woman-image {
+  width: 100%;
+}
+
 .banner .body .content:last-child img {
   height: 294px;
+  width: 100%;
+}
+
+.banner .body img.left-circles {
+  position: absolute;
+  left: 0px;
+  top: 20%;
+  width: 30px;
+}
+
+.banner h2.art-text {
+  letter-spacing: 0.39em;
+  color: rgba(228, 228, 228, 0.26);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 55px;
+  position: fixed;
+  top: 600px;
+  right: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner .body {
+    margin: 0px 20px;
+  }
+  .banner .body .content.second-content {
+    margin-right: 10%;
+  }
+  .banner .body .content .banner-card {
+    height: 489px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .banner .body .content .banner-card h4 {
+    font-size: 36px;
+  }
+  .banner .body .content .banner-card p {
+    font-size: 24px;
+  }
+  .banner .body .content .banner-card .orange-pill {
+    width: 83px;
+    height: 5px;
+  }
+  .banner .body .content .banner-card .blue-pill {
+    width: 37px;
+    height: 5px;
+  }
+  .banner .body .content img.overlap {
+    position: absolute;
+    width: 352px;
+    height: 428px;
+    bottom: 40px;
+    left: -170px;
+    top: 350px;
+  }
+  .banner .body .content img.woman-image {
+    height: 100%;
+  }
+  .banner .body .content.first-content {
+    margin-left: 20%;
+    margin-top: 25%;
+  }
+  .banner .body img.left-circles {
+    top: 30%;
+    width: 50px;
+  }
+  .banner h2.art-text {
+    position: absolute;
+    font-size: 108px;
+    top: 960px;
+    right: 41%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
