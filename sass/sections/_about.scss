@@ -17,6 +17,7 @@
         .main-content {
             padding: 100px 50px 30px 50px;
             background-color: var(--primaryColor);
+            @include transition-ease;
             position: relative;
 
             .title-content {

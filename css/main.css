@@ -36,6 +36,43 @@ html {
   font-family: 'Playfair Display', serif;
 }
 
+@-webkit-keyframes rotate-season {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-season {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.rotate-season {
+  -webkit-animation-name: rotate-season;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 2s;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-timing-function: linear;
+  /* Chrome, Safari, Opera */
+  animation-name: rotate-season;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 .short-underline {
   position: relative;
 }
@@ -86,6 +123,42 @@ section {
   color: #2C2E31;
 }
 
+.toggle-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 2;
+}
+
+.toggle-icons .toggle-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 1px 5px #6e6e6e;
+          box-shadow: 0 1px 5px #6e6e6e;
+  cursor: pointer;
+}
+
+.toggle-icons .toggle-icon i {
+  color: var(--primaryColor);
+  font-size: 20px;
+}
+
+body {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 @media (max-width: 767px) {
   .hide-mobile {
     display: none;
@@ -104,6 +177,8 @@ section {
 #devugo-navbar .devugo-btn {
   background: var(--primaryColor);
   color: var(--btnColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #devugo-navbar .content {
@@ -126,6 +201,8 @@ section {
   position: fixed;
   width: 100%;
   background-color: var(--colorBg);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   height: 100%;
@@ -141,7 +218,6 @@ section {
       justify-content: space-around;
   top: 0;
   opacity: 0.98;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -167,9 +243,10 @@ section {
   width: 50px;
   border-radius: 50%;
   border: 2px solid var(--textColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
   top: 10px;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -180,6 +257,8 @@ section {
 
 #devugo-navbar .content .navbar .circle i {
   color: var(--textColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #devugo-navbar .content .navbar-menu {
@@ -197,6 +276,8 @@ section {
 
 #devugo-navbar .content .navbar-menu li a {
   color: var(--textColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -217,6 +298,8 @@ section {
 
 #devugo-navbar .content .hamburger-stick__one {
   background-color: var(--textColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #devugo-navbar .content .hamburger-stick__one::after {
@@ -226,11 +309,15 @@ section {
   height: 3px;
   right: 0;
   background-color: var(--textColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   top: 8px;
 }
 
 #devugo-navbar .content .hamburger-stick__two {
   background-color: var(--textColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   top: 14px;
 }
 
@@ -241,6 +328,8 @@ section {
   height: 3px;
   right: 0;
   background-color: var(--textColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   top: 8px;
 }
 
@@ -256,6 +345,8 @@ section {
   #desktop-navbar .devugo-btn {
     background: var(--primaryColor);
     color: var(--btnColor);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   #desktop-navbar .content {
     display: -webkit-box;
@@ -291,6 +382,8 @@ section {
   }
   #desktop-navbar .content .navbar-menu li a {
     color: var(--textColor);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 }
 
@@ -341,6 +434,8 @@ section {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .banner .body .content .banner-card h4 {
@@ -520,6 +615,8 @@ section {
 .about .body .main-content {
   padding: 100px 50px 30px 50px;
   background-color: var(--primaryColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   position: relative;
 }
 
@@ -667,6 +764,8 @@ section {
 .reviews .body .content .first {
   position: relative;
   background-color: var(--primaryColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   width: 65%;
   padding: 7% 15% 5% 15%;
 }
@@ -699,6 +798,8 @@ section {
   height: 32px;
   border-radius: 50%;
   background-color: var(--primaryColor);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   top: 60px;
   right: 10px;
   display: -webkit-box;
@@ -711,7 +812,6 @@ section {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 

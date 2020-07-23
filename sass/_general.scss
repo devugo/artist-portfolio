@@ -1,4 +1,24 @@
 
+@keyframes rotate-season {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-season {
+    -webkit-animation-name: rotate-season; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+    animation-name: rotate-season;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 .short-underline {
     position: relative;
 
@@ -47,6 +67,35 @@ input, textarea {
 
 section {
     color: $text-color;
+}
+
+.toggle-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 2;
+
+
+    .toggle-icon {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 1px 5px #6e6e6e;
+        cursor: pointer;
+
+        i{
+            color: var(--primaryColor);
+            font-size: 20px;
+        }
+    }
+}
+
+body {
+    @include transition-ease;
 }
 
 @media(max-width: 767px) {

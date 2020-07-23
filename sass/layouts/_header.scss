@@ -13,6 +13,7 @@
     .devugo-btn {
         background: var(--primaryColor);
         color: var(--btnColor);
+        @include transition-ease;
 
     }
 
@@ -31,6 +32,7 @@
             position: fixed;
             width: 100%;
             background-color: var(--colorBg);
+            @include transition-ease;
             transform: translateX(100%);
             // bottom: 0px;
             height: 100%;
@@ -59,6 +61,7 @@
                 width: 50px;
                 border-radius: 50%;
                 border: 2px solid var(--textColor);
+                @include transition-ease;
                 cursor: pointer;
                 top: 10px;
                 @include transition-ease;
@@ -69,6 +72,7 @@
 
                 i{
                     color: var(--textColor);
+                    @include transition-ease;
                 }
             }
 
@@ -85,6 +89,7 @@
                     margin-bottom: 20px;
                     a{
                         color: var(--textColor);
+                        @include transition-ease;
                         font-weight: 500;
                         font-size: 18px;
                         line-height: 27px;
@@ -105,7 +110,8 @@
                 border-radius: 5px;
 
                 &__one {
-                    background-color: var(--textColor);;
+                    background-color: var(--textColor);
+                    @include transition-ease;
     
     
                     &::after {
@@ -114,13 +120,15 @@
                         width: 30px;
                         height: 3px;
                         right: 0;
-                        background-color: var(--textColor);;
+                        background-color: var(--textColor);
+                        @include transition-ease;
                         top: 8px;
                     }
                 }
 
                 &__two {
-                    background-color: var(--textColor);;
+                    background-color: var(--textColor);
+                    @include transition-ease;
                     top: 14px;
     
     
@@ -130,7 +138,8 @@
                         width: 30px;
                         height: 3px;
                         right: 0;
-                        background-color: var(--textColor);;
+                        background-color: var(--textColor);
+                        @include transition-ease;
                         top: 8px;
                     }
                 }
@@ -156,6 +165,7 @@
         .devugo-btn {
             background: var(--primaryColor);
             color: var(--btnColor);
+            @include transition-ease;
         }
 
         .content {
@@ -182,7 +192,8 @@
                     li {
                         margin-left: 0px;
                         a{
-                            color: var(--textColor);;
+                            color: var(--textColor);
+                            @include transition-ease;
                         }
                     }
                 }

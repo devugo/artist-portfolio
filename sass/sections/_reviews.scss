@@ -41,6 +41,7 @@
             .first {
                 position: relative;
                 background-color: var(--primaryColor);
+                @include transition-ease;
                 width: 65%;
                 padding: 7% 15% 5% 15%;
             }
@@ -72,6 +73,7 @@
             height: 32px;
             border-radius: 50%;
             background-color: var(--primaryColor);
+            @include transition-ease;
             top: 60px;
             right: 10px;
             display: flex;
