@@ -24,9 +24,14 @@ $(document).ready(function(){
 });
 
 var navbarCloseBtn = document.getElementById('navbar-close');
+var hamburgerBtn = document.getElementById('hamburger');
 var navbar = document.getElementById('navbar');
 
 
 navbarCloseBtn.addEventListener('click', function(){
+    navbar.classList.toggle("open");
+})
+
+hamburgerBtn.addEventListener('click', function(){
     navbar.classList.toggle("open");
 })

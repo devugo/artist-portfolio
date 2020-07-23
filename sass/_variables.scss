@@ -8,6 +8,27 @@ $bg-color: #131417;
     $bg-color: #fff;
 }
 
-body {
-    background-color: $bg-color;
+// body {
+//     background-color: $bg-color;
+// }
+
+html {
+    --primaryColor: #CBFDC3;
+    --colorBg: #131417;
+    --textColor: #fff;
+    --cardColor: #2C2E31;
+    --btnColor: #289916;
+}
+  
+html[data-theme='light'] {
+    --primaryColor: #EBF8FF;
+    --colorBg: #fff;
+    --textColor: #2C2E31;
+    --cardColor: #2C2E31;
+    --btnColor: #4E8DEC;
+}
+
+body{
+    
+    background: var(--colorBg);
 }

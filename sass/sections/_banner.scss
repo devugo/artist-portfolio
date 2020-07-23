@@ -6,7 +6,7 @@
             .banner-card {
                 // padding: 70px 60px 60px 60px;
                 padding: 23% 22% 22% 22%;
-                background-color: $primary-color;
+                background-color: var(--primaryColor);
                 height: 262px;
                 width: 100%;
                 display: flex;
@@ -191,7 +191,7 @@
         
         h2.art-text {
             font-size: 108px;
-            top: 120%;
+            top: 140%;
             right: 41.5%;
         }
     }

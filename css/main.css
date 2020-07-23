@@ -1,7 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet');
+html {
+  --primaryColor: #CBFDC3;
+  --colorBg: #131417;
+  --textColor: #fff;
+  --cardColor: #2C2E31;
+  --btnColor: #289916;
+}
+
+html[data-theme='light'] {
+  --primaryColor: #EBF8FF;
+  --colorBg: #fff;
+  --textColor: #2C2E31;
+  --cardColor: #2C2E31;
+  --btnColor: #4E8DEC;
+}
+
 body {
-  background-color: #131417;
+  background: var(--colorBg);
 }
 
 html {
@@ -59,6 +75,13 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
   padding: 15px;
 }
 
+.devugo-btn {
+  padding: 7px 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+}
+
 section {
   color: #2C2E31;
 }
@@ -69,12 +92,18 @@ section {
   }
 }
 
+#desktop-navbar {
+  display: none;
+}
+
 #devugo-navbar {
   width: 100%;
   height: 70px;
-  -webkit-box-shadow: 0 8px 6px -6px #999;
-          box-shadow: 0 8px 6px -6px #999;
-  background-color: white;
+}
+
+#devugo-navbar .devugo-btn {
+  background: var(--primaryColor);
+  color: var(--btnColor);
 }
 
 #devugo-navbar .content {
@@ -85,14 +114,20 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+#devugo-navbar .content .navbar-logo {
+  margin-left: 40px;
 }
 
 #devugo-navbar .content .navbar {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  background-color: red;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  background-color: var(--colorBg);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   height: 100%;
   z-index: 2;
   display: -webkit-box;
@@ -104,13 +139,15 @@ section {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  top: 0;
+  opacity: 0.98;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 #devugo-navbar .content .navbar.open {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 #devugo-navbar .content .navbar .circle {
@@ -129,9 +166,20 @@ section {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: blue;
-  border: 1px solid white;
-  top: 40px;
+  border: 2px solid var(--textColor);
+  cursor: pointer;
+  top: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#devugo-navbar .content .navbar .circle:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#devugo-navbar .content .navbar .circle i {
+  color: var(--textColor);
 }
 
 #devugo-navbar .content .navbar-menu {
@@ -139,10 +187,130 @@ section {
   padding: 0;
   list-style: none;
   text-align: center;
+  margin-top: 100px;
+}
+
+#devugo-navbar .content .navbar-menu li {
+  margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #devugo-navbar .content .navbar-menu li a {
-  color: white;
+  color: var(--textColor);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#devugo-navbar .content .hamburger {
+  position: relative;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+#devugo-navbar .content .hamburger-stick {
+  position: relative;
+  width: 40px;
+  height: 3px;
+  border-radius: 5px;
+}
+
+#devugo-navbar .content .hamburger-stick__one {
+  background-color: var(--textColor);
+}
+
+#devugo-navbar .content .hamburger-stick__one::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  right: 0;
+  background-color: var(--textColor);
+  top: 8px;
+}
+
+#devugo-navbar .content .hamburger-stick__two {
+  background-color: var(--textColor);
+  top: 14px;
+}
+
+#devugo-navbar .content .hamburger-stick__two::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  right: 0;
+  background-color: var(--textColor);
+  top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  #devugo-navbar {
+    display: none;
+  }
+  #desktop-navbar {
+    display: block;
+    margin-right: 3.5%;
+    margin-left: 3.5%;
+  }
+  #desktop-navbar .devugo-btn {
+    background: var(--primaryColor);
+    color: var(--btnColor);
+  }
+  #desktop-navbar .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+  }
+  #desktop-navbar .content div:first-child {
+    width: 30%;
+  }
+  #desktop-navbar .content .navbar {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #desktop-navbar .content .navbar-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #desktop-navbar .content .navbar-menu li {
+    margin-left: 0px;
+  }
+  #desktop-navbar .content .navbar-menu li a {
+    color: var(--textColor);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #desktop-navbar .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+  }
+  #desktop-navbar .content div:first-child {
+    width: 35%;
+  }
+  #desktop-navbar .content .navbar {
+    width: 65%;
+  }
+  #desktop-navbar .content .navbar-menu li {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
 .devugo-footer {
@@ -160,7 +328,7 @@ section {
 
 .banner .body .content .banner-card {
   padding: 23% 22% 22% 22%;
-  background-color: #CBFDC3;
+  background-color: var(--primaryColor);
   height: 262px;
   width: 100%;
   display: -webkit-box;
@@ -324,7 +492,7 @@ section {
   }
   .banner h2.art-text {
     font-size: 108px;
-    top: 120%;
+    top: 140%;
     right: 41.5%;
   }
 }
@@ -351,7 +519,7 @@ section {
 
 .about .body .main-content {
   padding: 100px 50px 30px 50px;
-  background-color: #CBFDC3;
+  background-color: var(--primaryColor);
   position: relative;
 }
 
@@ -404,7 +572,7 @@ section {
   }
   .about .body .main-content .title-content h3 {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 32px;
   }
 }
@@ -415,6 +583,9 @@ section {
   }
   .about .body .main-content {
     padding: 100px 10% 10% 10%;
+  }
+  .about .body .main-content .title-content h3 {
+    font-size: 35px;
   }
 }
 
@@ -495,7 +666,7 @@ section {
 
 .reviews .body .content .first {
   position: relative;
-  background-color: #CBFDC3;
+  background-color: var(--primaryColor);
   width: 65%;
   padding: 7% 15% 5% 15%;
 }
@@ -527,9 +698,9 @@ section {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #CBFDC3;
+  background-color: var(--primaryColor);
   top: 60px;
-  right: 50px;
+  right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

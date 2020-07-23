@@ -19,7 +19,7 @@
       name="author github"
       content="github.com/devugo"
     />
-    <title>Debbs Design - Home</title>
+    <title>Momento Artist Portfolio - Home</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/aos.min.css" rel="stylesheet">
@@ -34,13 +34,18 @@
 
 </head>
 <body>
+    <div class="toggle-icons">
+        <div class="toggle-icon">
+            <i class="fa fa-sun-o"></i>
+        </div>
+    </div>
     <nav id="devugo-navbar">
         <div class="content">
-            <a class="navbar-logo" href="#"><img src="img/logo-dark.png" /></a>
+            <a class="navbar-logo" href="#"><img src="img/logo-light.png" /></a>
 
             <div class="navbar" id="navbar">
                 <div class="circle" id="navbar-close">
-                    x
+                    <i class="fa fa-times"></i>
                 </div>
                 <ul class="navbar-menu">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
@@ -50,9 +55,25 @@
                 <a href="#contact" class="btn devugo-btn">Contact Me</a>
             </div>
 
-            <div class="hamburger">
-                <span class="hamburger-stick"></span>
-                <span class="hamburger-stick"></span>
+            <div class="hamburger" id="hamburger">
+                <div class="hamburger-stick hamburger-stick__one"></div>
+                <div class="hamburger-stick hamburger-stick__two"></div>
+            </div>
+        </div>
+    </nav>
+    <nav id="desktop-navbar" class="hide-mobile">
+        <div class="content">
+            <div class="navbar-logo__container">
+                <a class="navbar-logo" href="#"><img src="img/logo-light.png" /></a>
+            </div>
+
+            <div class="navbar" id="navbar">
+                <ul class="navbar-menu">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                </ul>
+                <a href="#contact" class="btn devugo-btn">Contact Me</a>
             </div>
         </div>
     </nav>

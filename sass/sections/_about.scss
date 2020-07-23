@@ -16,7 +16,7 @@
 
         .main-content {
             padding: 100px 50px 30px 50px;
-            background-color: $primary-color;
+            background-color: var(--primaryColor);
             position: relative;
 
             .title-content {
@@ -76,7 +76,7 @@
                 .title-content {
                     h3 {
                         font-weight: bold;
-                        font-size: 24px;
+                        font-size: 30px;
                         line-height: 32px;
                     }
                 }
@@ -94,7 +94,12 @@
     
             .main-content {
                 padding: 100px 10% 10% 10%;
-
+                
+                .title-content {
+                    h3 {
+                        font-size: 35px;
+                    }
+                }
                
             }
         }

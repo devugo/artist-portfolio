@@ -1,3 +1,4 @@
+
 .short-underline {
     position: relative;
 
@@ -37,6 +38,13 @@ input, textarea {
     padding: 15px;
 }
 
+.devugo-btn {
+    padding: 7px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+}
+
 section {
     color: $text-color;
 }
@@ -46,3 +54,5 @@ section {
         display: none;
     }
 }
+
+

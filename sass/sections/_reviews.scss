@@ -40,7 +40,7 @@
 
             .first {
                 position: relative;
-                background-color: $primary-color;
+                background-color: var(--primaryColor);
                 width: 65%;
                 padding: 7% 15% 5% 15%;
             }
@@ -71,9 +71,9 @@
             width: 32px;
             height: 32px;
             border-radius: 50%;
-            background-color: $primary-color;
+            background-color: var(--primaryColor);
             top: 60px;
-            right: 50px;
+            right: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -158,13 +158,6 @@
                 p{
                     font-size: 16px;
                     line-height: 25px;
-                }
-
-                .line-one {
-                    
-                }
-                .line-two {
-                    
                 }
     
                 .first {
