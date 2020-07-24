@@ -29,6 +29,7 @@ var navbar = document.getElementById('navbar');
 var toggleIcons = document.getElementById('toggle-icons');
 var leftCircles = document.getElementById('left-circles');
 var logos = document.getElementsByClassName('logo');
+var footerLogos = document.getElementsByClassName('footer-logo');
 
 
 navbarCloseBtn.addEventListener('click', function(){
@@ -48,12 +49,20 @@ toggleIcons.addEventListener('click', function(){
         for(var i = 0; i < logos.length; i++){
             logos[i].setAttribute('src', 'img/logo-light.png');
         }
+
+        for(var i = 0; i < footerLogos.length; i++){
+            footerLogos[i].setAttribute('src', 'img/logo-light.png');
+        }
     }else{
         document.documentElement.setAttribute('data-theme', 'light');
         leftCircles.setAttribute('src', 'img/side-circles__light.png');
         
         for(var i = 0; i < logos.length; i++){
             logos[i].setAttribute('src', 'img/logo-dark.png');
+        }
+        
+        for(var i = 0; i < footerLogos.length; i++){
+            footerLogos[i].setAttribute('src', 'img/logo-dark.png');
         }
     }
    

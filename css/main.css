@@ -408,7 +408,141 @@ body {
 
 .devugo-footer {
   width: 100%;
-  background-color: red;
+  overflow-x: hidden !important;
+}
+
+.devugo-footer .body .content {
+  color: var(--textColor);
+  padding: 5% 15% 5% 15%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.devugo-footer .body .content.first {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.devugo-footer .body .content.first h4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.devugo-footer .body .content.first p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 30px;
+}
+
+.devugo-footer .body .content.first form input {
+  border: 0;
+  border-bottom: 1px solid var(--textColor);
+  background: inherit;
+  color: #f3f3f3;
+  font-weight: 300;
+  font-size: 16px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.devugo-footer .body .content.first form button {
+  background-color: var(--primaryColor);
+  color: var(--btnColor);
+}
+
+.devugo-footer .body .content.first img.footer-circles {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  height: 40px;
+  width: 60px;
+}
+
+.devugo-footer .body .content.first .footer-logo {
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.devugo-footer .body .content.second {
+  background-color: var(--primaryColor);
+  color: #2C2E31;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.devugo-footer .body .content.second .footer-logo {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.devugo-footer .body .content.second h4 {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+  margin-top: 10px;
+}
+
+.devugo-footer .body .content.second p {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.devugo-footer .body .content.second .social img {
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.devugo-footer .body .content.second .social img:hover {
+  opacity: 0.9;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  .devugo-footer .body .content.first h4 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .devugo-footer .body .content.first p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130.5%;
+  }
+  .devugo-footer .body .content.first img.footer-circles {
+    left: 15%;
+    bottom: 20px;
+    height: 40px;
+    width: 60px;
+  }
+  .devugo-footer .body .content.first .footer-logo {
+    width: 100px;
+  }
+  .devugo-footer .body .content.second {
+    padding-left: 20% !important;
+    padding-top: 10% !important;
+    height: 100%;
+  }
+  .devugo-footer .body .content.second .footer-logo {
+    display: none;
+    width: 100px;
+  }
+  .devugo-footer .body .content.second h4 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .devugo-footer .body .content.second p {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .banner {
@@ -725,6 +859,10 @@ body {
   position: relative;
 }
 
+.reviews .body .content .carousel-item {
+  height: 250px;
+}
+
 .reviews .body .content h3 {
   font-weight: bold;
   font-size: 10px;
@@ -773,7 +911,7 @@ body {
 .reviews .body .content .second {
   position: absolute;
   right: -80px;
-  top: 23%;
+  top: 35%;
 }
 
 .reviews .body .content .second img {
@@ -800,7 +938,7 @@ body {
   background-color: var(--primaryColor);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  top: 60px;
+  top: 100px;
   right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -820,6 +958,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .reviews .body .content .carousel-item {
+    height: 400px;
+  }
   .reviews .body .content h3 {
     font-weight: bold;
     font-size: 18px;
@@ -863,6 +1004,9 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .reviews .body .content .carousel-item {
+    height: 600px;
+  }
   .reviews .body .content h3 {
     font-size: 18px;
   }
@@ -887,7 +1031,7 @@ body {
   }
   .reviews .body .next-button {
     top: 300px;
-    right: 200px;
+    right: 10%;
   }
 }
 /*# sourceMappingURL=main.css.map */
