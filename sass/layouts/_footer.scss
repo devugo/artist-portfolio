@@ -9,7 +9,7 @@
 
             &.first {
                 padding-top: 50px;
-                padding-bottom: 70px;
+                // padding-bottom: 70px;
                 position: relative;
                 h4{
                     font-weight: bold;
@@ -44,7 +44,7 @@
                 img.footer-circles {
                     position: absolute;
                     right: 0;
-                    bottom: 20px;
+                    bottom: 0px;
                     height: 40px;
                     width: 60px;
                 }
@@ -121,8 +121,8 @@
                     }
     
                     img.footer-circles {
-                        left: 15%;
-                        bottom: 20px;
+                        left: 0;
+                        bottom: -24px;
                         height: 40px;
                         width: 60px;
                     }
@@ -149,6 +149,25 @@
                     p{
                         font-size: 24px;
                         line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .devugo-footer {
+        .body {
+            .content {
+    
+                &.first {
+    
+                    img.footer-circles {
+                        left: 0;
+                        bottom: -8px;
+                        height: 40px;
+                        width: 60px;
                     }
                 }
             }

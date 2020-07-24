@@ -417,7 +417,6 @@ body {
 
 .devugo-footer .body .content.first {
   padding-top: 50px;
-  padding-bottom: 70px;
   position: relative;
 }
 
@@ -453,7 +452,7 @@ body {
 .devugo-footer .body .content.first img.footer-circles {
   position: absolute;
   right: 0;
-  bottom: 20px;
+  bottom: 0px;
   height: 40px;
   width: 60px;
 }
@@ -517,8 +516,8 @@ body {
     float: right;
   }
   .devugo-footer .body .content.first img.footer-circles {
-    left: 15%;
-    bottom: 20px;
+    left: 0;
+    bottom: -24px;
     height: 40px;
     width: 60px;
   }
@@ -542,6 +541,15 @@ body {
   .devugo-footer .body .content.second p {
     font-size: 24px;
     line-height: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .devugo-footer .body .content.first img.footer-circles {
+    left: 0;
+    bottom: -8px;
+    height: 40px;
+    width: 60px;
   }
 }
 
@@ -611,6 +619,7 @@ body {
 
 .banner .body .content.first-content .woman-image {
   width: 100%;
+  height: 400px;
 }
 
 .banner .body .content:last-child img {
@@ -636,6 +645,24 @@ body {
   position: fixed;
   top: 500px;
   right: -30px;
+}
+
+@media (min-width: 420px) {
+  .banner .body .content img.woman-image {
+    height: 500px;
+  }
+}
+
+@media (min-width: 576px) {
+  .banner .body .content img.woman-image {
+    height: 620px;
+  }
+}
+
+@media (min-width: 642px) {
+  .banner .body .content img.woman-image {
+    height: 650px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -685,7 +712,7 @@ body {
   .banner h2.art-text {
     position: absolute;
     font-size: 80px;
-    top: 87%;
+    top: 90%;
     right: 43.5%;
   }
 }
@@ -726,6 +753,13 @@ body {
   }
 }
 
+@media (min-width: 1250px) {
+  .banner h2.art-text {
+    font-size: 108px;
+    top: 120%;
+  }
+}
+
 .about {
   width: 100%;
   margin-top: 40px;
@@ -743,7 +777,7 @@ body {
 
 .about .body img {
   width: 100%;
-  height: 321px;
+  height: 350px;
 }
 
 .about .body .main-content {
@@ -765,7 +799,7 @@ body {
 }
 
 .about .body .main-content .content p {
-  font-size: 16px;
+  font-size: 14.5px;
   line-height: 24px;
 }
 
@@ -779,7 +813,25 @@ body {
   letter-spacing: 0.09em;
   position: absolute;
   top: 50px;
-  right: -20px;
+  right: -5px;
+}
+
+@media (min-width: 420px) {
+  .about .body img {
+    height: 500px;
+  }
+}
+
+@media (min-width: 550px) {
+  .about .body img {
+    height: 600px;
+  }
+}
+
+@media (min-width: 642px) {
+  .about .body img {
+    height: 700px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -817,6 +869,9 @@ body {
   }
   .about .body .main-content .title-content h3 {
     font-size: 35px;
+  }
+  .about .body .main-content .content p {
+    font-size: 16px;
   }
 }
 
@@ -920,7 +975,7 @@ body {
 
 .reviews .body .content h2 {
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: -10px;
   font-weight: 600;
   font-size: 12px;
@@ -994,7 +1049,7 @@ body {
   .reviews .body .content h2 {
     font-size: 27px;
     line-height: 48px;
-    top: 40px;
+    top: 60px;
   }
   .reviews .body .next-button {
     width: 60px;
@@ -1027,7 +1082,7 @@ body {
   }
   .reviews .body .content h2 {
     font-size: 32px;
-    top: 50px;
+    top: 80px;
   }
   .reviews .body .next-button {
     top: 300px;
