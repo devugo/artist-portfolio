@@ -52,11 +52,11 @@ toggleIcon.addEventListener('click', function(){
         i.setAttribute('class', 'fa fa-moon-o');
 
         for(var i = 0; i < logos.length; i++){
-            logos[i].setAttribute('src', 'img/logo-light.png');
+            logos[i].setAttribute('src', 'img/100x57.png');
         }
 
         for(var i = 0; i < footerLogos.length; i++){
-            footerLogos[i].setAttribute('src', 'img/logo-light.png');
+            footerLogos[i].setAttribute('src', 'img/100x57.png');
         }
     }else{
         document.documentElement.setAttribute('data-theme', 'light');
@@ -67,11 +67,11 @@ toggleIcon.addEventListener('click', function(){
         i.setAttribute('class', 'fa fa-sun-o');
         
         for(var i = 0; i < logos.length; i++){
-            logos[i].setAttribute('src', 'img/logo-dark.png');
+            logos[i].setAttribute('src', 'img/100x57.png');
         }
         
         for(var i = 0; i < footerLogos.length; i++){
-            footerLogos[i].setAttribute('src', 'img/logo-dark.png');
+            footerLogos[i].setAttribute('src', 'img/100x57.png');
         }
     }
    
