@@ -51,6 +51,7 @@
                
                 .woman-image {
                     width: 100%;
+                    height: 400px;
                 }
             }
             &:last-child {
@@ -80,6 +81,48 @@
         position: fixed;
         top: 500px;
         right: -30px;
+    }
+}
+
+@media(min-width: 420px) {
+    .banner {
+        .body {
+            .content{
+               
+
+                img.woman-image{
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 576px) {
+    .banner {
+        .body {
+            .content{
+               
+
+                img.woman-image{
+                    height: 620px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 642px) {
+    .banner {
+        .body {
+            .content{
+               
+
+                img.woman-image{
+                    height: 650px;
+                }
+            }
+        }
     }
 }
 
@@ -143,7 +186,7 @@
         h2.art-text {
             position: absolute;
             font-size: 80px;
-            top: 87%;
+            top: 90%;
             right: 43.5%;
         }
     }
@@ -194,6 +237,15 @@
             font-size: 108px;
             top: 140%;
             right: 41.5%;
+        }
+    }
+}
+
+@media(min-width: 1250px){
+    .banner {
+        h2.art-text {
+            font-size: 108px;
+            top: 120%;
         }
     }
 }
