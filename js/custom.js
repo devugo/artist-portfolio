@@ -26,8 +26,9 @@ $(document).ready(function(){
 var navbarCloseBtn = document.getElementById('navbar-close');
 var hamburgerBtn = document.getElementById('hamburger');
 var navbar = document.getElementById('navbar');
-var toggleIcons = document.getElementById('toggle-icons');
+var toggleIcon = document.getElementById('toggle-icon');
 var leftCircles = document.getElementById('left-circles');
+var footerCircles = document.getElementById('footer-circles');
 var logos = document.getElementsByClassName('logo');
 var footerLogos = document.getElementsByClassName('footer-logo');
 
@@ -40,11 +41,15 @@ hamburgerBtn.addEventListener('click', function(){
     navbar.classList.toggle("open");
 })
 
-toggleIcons.addEventListener('click', function(){
+toggleIcon.addEventListener('click', function(){
     let currTheme = document.documentElement.getAttribute("data-theme"); 
     if(currTheme == 'light'){
         document.documentElement.setAttribute('data-theme', 'dark')
         leftCircles.setAttribute('src', 'img/side-circles.png');
+        footerCircles.setAttribute('src', 'img/footer-circles.png');
+        var i = toggleIcon.firstElementChild;
+
+        i.setAttribute('class', 'fa fa-moon-o');
 
         for(var i = 0; i < logos.length; i++){
             logos[i].setAttribute('src', 'img/logo-light.png');
@@ -56,6 +61,10 @@ toggleIcons.addEventListener('click', function(){
     }else{
         document.documentElement.setAttribute('data-theme', 'light');
         leftCircles.setAttribute('src', 'img/side-circles__light.png');
+        footerCircles.setAttribute('src', 'img/footer-circles__light.png');
+        var i = toggleIcon.firstElementChild;
+
+        i.setAttribute('class', 'fa fa-sun-o');
         
         for(var i = 0; i < logos.length; i++){
             logos[i].setAttribute('src', 'img/logo-dark.png');

@@ -69,28 +69,25 @@ section {
     color: $text-color;
 }
 
-.toggle-icons {
+
+.toggle-icon {
     position: fixed;
     bottom: 20px;
     right: 15px;
     z-index: 2;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 5px #6e6e6e;
+    cursor: pointer;
 
-
-    .toggle-icon {
-        width: 40px;
-        height: 40px;
-        background-color: #fff;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 1px 5px #6e6e6e;
-        cursor: pointer;
-
-        i{
-            color: var(--primaryColor);
-            font-size: 20px;
-        }
+    i{
+        color: var(--primaryColor);
+        font-size: 20px;
     }
 }
 

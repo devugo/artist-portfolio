@@ -123,14 +123,11 @@ section {
   color: #2C2E31;
 }
 
-.toggle-icons {
+.toggle-icon {
   position: fixed;
   bottom: 20px;
   right: 15px;
   z-index: 2;
-}
-
-.toggle-icons .toggle-icon {
   width: 40px;
   height: 40px;
   background-color: #fff;
@@ -149,7 +146,7 @@ section {
   cursor: pointer;
 }
 
-.toggle-icons .toggle-icon i {
+.toggle-icon i {
   color: var(--primaryColor);
   font-size: 20px;
 }
@@ -270,8 +267,8 @@ body {
 }
 
 #devugo-navbar .content .navbar-menu li {
-  margin-bottom: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 #devugo-navbar .content .navbar-menu li a {
@@ -441,7 +438,7 @@ body {
   border: 0;
   border-bottom: 1px solid var(--textColor);
   background: inherit;
-  color: #f3f3f3;
+  color: var(--textColor);
   font-weight: 300;
   font-size: 16px;
   -webkit-transition: all 0.5s ease-in-out;
@@ -516,6 +513,9 @@ body {
     font-size: 16px;
     line-height: 130.5%;
   }
+  .devugo-footer .body .content.first form button {
+    float: right;
+  }
   .devugo-footer .body .content.first img.footer-circles {
     left: 15%;
     bottom: 20px;
@@ -527,7 +527,7 @@ body {
   }
   .devugo-footer .body .content.second {
     padding-left: 20% !important;
-    padding-top: 10% !important;
+    padding-top: 20% !important;
     height: 100%;
   }
   .devugo-footer .body .content.second .footer-logo {

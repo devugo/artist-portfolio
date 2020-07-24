@@ -29,7 +29,7 @@
                         border: 0;
                         border-bottom: 1px solid var(--textColor);
                         background: inherit;
-                        color: #f3f3f3;
+                        color: var(--textColor);
                         font-weight: 300;
                         font-size: 16px;
                         @include transition-ease;
@@ -112,6 +112,13 @@
                         font-size: 16px;
                         line-height: 130.5%;
                     }
+
+                    form {
+    
+                        button {
+                            float: right;
+                        }
+                    }
     
                     img.footer-circles {
                         left: 15%;
@@ -126,7 +133,7 @@
                 }
                 &.second {
                    padding-left: 20% !important;
-                   padding-top: 10% !important;
+                   padding-top: 20% !important;
                    height: 100%;
     
                     .footer-logo {
