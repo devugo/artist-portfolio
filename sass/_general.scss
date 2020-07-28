@@ -1,4 +1,3 @@
-
 @keyframes rotate-season {
     0% {
         transform: rotate(0deg);
@@ -77,13 +76,14 @@ section {
     z-index: 2;
     width: 40px;
     height: 40px;
-    background-color: #fff;
+    background-color: var(--toggleIconBg);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 1px 5px #6e6e6e;
     cursor: pointer;
+    @include transition-ease;
 
     i{
         color: var(--primaryColor);
@@ -100,5 +100,3 @@ body {
         display: none;
     }
 }
-
-
