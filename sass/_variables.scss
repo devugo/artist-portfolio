@@ -18,6 +18,8 @@ html {
     --textColor: #fff;
     --cardColor: #2C2E31;
     --btnColor: #289916;
+    --toggleIconBg: #fff;
+    --artTextColor: rgba(228, 228, 228, 0.26);
 }
   
 html[data-theme='light'] {
@@ -26,6 +28,8 @@ html[data-theme='light'] {
     --textColor: #2C2E31;
     --cardColor: #2C2E31;
     --btnColor: #4E8DEC;
+    --toggleIconBg: #131417;
+    --artTextColor: rgba(59, 59, 59, 0.26);
 }
 
 body{

@@ -6,6 +6,8 @@ html {
   --textColor: #fff;
   --cardColor: #2C2E31;
   --btnColor: #289916;
+  --toggleIconBg: #fff;
+  --artTextColor: rgba(228, 228, 228, 0.26);
 }
 
 html[data-theme='light'] {
@@ -14,6 +16,8 @@ html[data-theme='light'] {
   --textColor: #2C2E31;
   --cardColor: #2C2E31;
   --btnColor: #4E8DEC;
+  --toggleIconBg: #131417;
+  --artTextColor: rgba(59, 59, 59, 0.26);
 }
 
 body {
@@ -130,7 +134,7 @@ section {
   z-index: 2;
   width: 40px;
   height: 40px;
-  background-color: #fff;
+  background-color: var(--toggleIconBg);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,6 +148,8 @@ section {
   -webkit-box-shadow: 0 1px 5px #6e6e6e;
           box-shadow: 0 1px 5px #6e6e6e;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .toggle-icon i {
@@ -638,7 +644,7 @@ body {
 
 .banner h2.art-text {
   letter-spacing: 0.39em;
-  color: rgba(228, 228, 228, 0.26);
+  color: var(--artTextColor);
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   font-weight: bold;
